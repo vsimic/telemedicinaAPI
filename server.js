@@ -19,7 +19,7 @@ app.use(morgan('dev'));                                         // log every req
 mongoose.connect('mongodb://admin:admin@ds031561.mongolab.com:31561/telemedicina');
 //mongoose.connect("mongodb://localhost/telemedicina");
 
-var port = /*process.env.PORT || */8080;        // set our port
+var port = /*process.env.PORT || */3000;        // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================

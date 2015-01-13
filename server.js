@@ -233,6 +233,10 @@ router.route('/patients/exams/:patientId')
         }
     });
 
+router.route('/')
+	.get(unction (req, res) {
+	  res.send(200, {status: 200, message: 'it works'});
+	});
 
 // routes ======================================================================
 // REGISTER OUR ROUTES -------------------------------

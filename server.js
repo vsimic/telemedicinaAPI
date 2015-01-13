@@ -233,15 +233,16 @@ router.route('/patients/exams/:patientId')
         }
     });
 
-router.route('/')
-	.get(unction (req, res) {
-	  res.send(200, {status: 200, message: 'it works'});
-	});
+
 
 // routes ======================================================================
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', router);
+
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
 
 
 // listen (start app with node server.js) ======================================
